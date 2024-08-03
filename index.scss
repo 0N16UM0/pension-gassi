@@ -1,0 +1,13 @@
+@import "lib/bootstrap-5.3.3/scss/bootstrap";
+
+.page-header {
+  background: url("images/hunde-herde.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.navbar-brand {
+  color: rgba(80, 80, 250, 0.685);
+  font-style: italic;
+}
