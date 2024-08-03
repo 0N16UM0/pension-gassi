@@ -12017,7 +12017,7 @@ textarea.form-control-lg {
   }
 }
 .page-header {
-  background: url("images/hunderennen.jpg");
+  background: url("images/header/hunderennen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -12075,4 +12075,27 @@ textarea.form-control-lg {
   padding-top: 12px;
   margin: 1.5rem auto;
   text-align: center;
+}
+
+.angebote {
+  background-color: lightblue;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.aboutus {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.aboutus .aboutus-image {
+  border-radius: 50%;
+  border: 5px solid lightblue;
+}
+@media (min-width: 768px) {
+  .aboutus .aboutus-list {
+    background: linear-gradient(to right, white 0%, white calc(50% - 3px), lightblue calc(50% - 3px), lightblue calc(50% + 3px), white calc(50% + 3px), white 100%);
+  }
+  .aboutus .aboutus-list .row:last-child {
+    background-color: white;
+  }
 }/*# sourceMappingURL=index.css.map */

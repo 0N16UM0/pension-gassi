@@ -1,11 +1,13 @@
 $font-size-base: 1.2rem;
 $header-jumbotron-height: 250px;
 $section-padding: 120px;
+$shadow: 1px 1px 5px black, 1px 1px 10px darkblue; 
+$secondcolor: lightblue;
 
 @import "lib/bootstrap-5.3.3/scss/bootstrap";
 
 .page-header {
-  background: url("images/hunderennen.jpg");
+  background: url("images/header/hunderennen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -14,12 +16,12 @@ $section-padding: 120px;
   padding-top: 0.13rem;
   color: $primary;
   font-style: italic;
-  text-shadow:1px 1px 5px black, 1px 1px 10px darkblue;;
+  text-shadow: $shadow;
 }
 
 .header-jumbotron {
-  color: lightblue;
-  text-shadow: 1px 1px 5px black, 1px 1px 10px darkblue;
+  color: $secondcolor;
+  text-shadow: $shadow;
   padding-top: 0px;
   padding-bottom: 15px;
   margin-bottom: 0px;
@@ -59,5 +61,34 @@ $section-padding: 120px;
     margin: 1.5rem auto;
     text-align: center;
   }
+}
+
+.angebote {
+  background-color: $secondcolor;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.aboutus {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .aboutus-image {
+    border-radius: 50%;
+    border: 5px solid $secondcolor;
+  }
+  
+  @include media-breakpoint-up(md) {
+    .aboutus-list {
+      background: linear-gradient(to right,  white 0%, white calc(50% - 3px), 
+      $secondcolor calc(50% - 3px), $secondcolor calc(50% + 3px), 
+      white calc(50% + 3px), white 100%);
+    
+      .row:last-child {
+        background-color: white;
+      }
+    }
+  }
+  
 }
 
