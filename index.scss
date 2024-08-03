@@ -1,13 +1,63 @@
+$font-size-base: 1.2rem;
+$header-jumbotron-height: 250px;
+$section-padding: 120px;
+
 @import "lib/bootstrap-5.3.3/scss/bootstrap";
 
 .page-header {
-  background: url("images/hunde-herde.jpg");
+  background: url("images/hunderennen.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
 }
 
 .navbar-brand {
-  color: rgba(80, 80, 250, 0.685);
+  padding-top: 0.13rem;
+  color: $primary;
   font-style: italic;
+  text-shadow:1px 1px 5px black, 1px 1px 10px darkblue;;
 }
+
+.header-jumbotron {
+  color: lightblue;
+  text-shadow: 1px 1px 5px black, 1px 1px 10px darkblue;
+  padding-top: 0px;
+  padding-bottom: 15px;
+  margin-bottom: 0px;
+  height: $header-jumbotron-height;
+  @include media-breakpoint-up(sm) {
+    height: $header-jumbotron-height + 50px;
+  }
+  @include media-breakpoint-up(md) {
+    height: $header-jumbotron-height + 100px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: $header-jumbotron-height + 150px;
+  }
+
+  h1 {
+    font-style: italic;
+    margin-bottom: 0px;
+  }
+  h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+}
+
+.services {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .service-icon {
+    font-size: 2.15rem;
+    color: $primary;
+    width: 5rem;
+    height: 5rem;
+    border: solid 2px $primary;
+    border-radius: 50%;
+    padding-top: 12px;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+}
+
