@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,30 +10,45 @@
 <body>
   <header class="page-header">
     <div class="container">
-      <nav class="navbar navbar-expand navbar-dark">
-        <a class="navbar-brand" href="#">Gassi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Dienstleistungen</a>
-            <a class="nav-item nav-link" href="#">Angebote</a>
-            <a class="nav-item nav-link" href="#">Über&nbsp;uns</a>
-            <a class="nav-item nav-link" href="#">Kontakt</a>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Gassi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Dienstleistungen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#angebote">Angebote</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">Über&nbsp;uns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Kontakt</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
       <div class="jumbotron header-jumbotron text-center d-flex flex-column justify-content-center align-items-center">
         <h1 class="display-6">Willkommen Tierfreunde!</h1>
         <h2 class="lead display-4">Wir kümmern uns um Ihre besten Freunde.</h2>
-        <a class="btn btn-primary btn-sm" href="#" role="button">Weitere Informationen</a>
+        <a class="btn btn-primary btn-sm" href="#angebote" role="button">Weitere Informationen</a>
       </div>
     </div>
   </header>
-  <section class="services">
+  <section class="services" id="services">
     <div class="container">
       <h3 class="text-center">Dienstleistungen</h3>
       <p class="text-center text-muted fst-italic mb-5">Wir können Ihnen folgende Dienstleistungen anbieten:</p>
@@ -64,7 +80,7 @@
       </div>
     </div>
   </section>
-  <section class="angebote">
+  <section class="angebote" id="angebote">
     <div class="container">
       <h3 class="text-center">Angebote</h3>
       <p class="text-center text-muted fst-italic mb-5">Diese Angebote können sich sehen lassen:</p>
@@ -126,7 +142,7 @@
       </div>
     </div>
   </section>
-  <section class="aboutus">
+  <section class="aboutus" id="aboutus">
     <div class="container">
       <h3 class="text-center">Über&nbsp;uns</h3>
       <p class="text-center text-muted fst-italic mb-5">Eine kleine Vorstellung unseres Unternehmens:</p>
@@ -180,7 +196,7 @@
       </div>
     </div>
   </section>
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <h3 class="text-center">Unser Team</h3>
       <p class="text-center text-muted fst-italic mb-5">Unsere Kollegen helfen Ihnen gerne bei jedem Anliegen:</p>
@@ -248,7 +264,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h3 class="text-center">Kontaktformular</h3>
       <p class="text-center fst-italic mb-5">Hinterlassen Sie uns Ihre Nachricht:</p>
@@ -260,7 +276,8 @@
             <input type="text" name="subject" class="form-control mb-3 mb-md-0" placeholder="Betreff" required>
           </div>
           <div class="col-12 col-md-6">
-            <textarea name="message" id="message" class="form-control contact-message" placeholder="Ihre Nachricht *" required></textarea>
+            <textarea name="message" id="message" class="form-control contact-message" placeholder="Ihre Nachricht *"
+              required></textarea>
           </div>
         </div>
         <div class="text-center">
@@ -294,5 +311,5 @@
   </footer>
 </body>
 <script src="https://kit.fontawesome.com/db48d73a1e.js" crossorigin="anonymous"></script>
-
+<script src="lib/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
