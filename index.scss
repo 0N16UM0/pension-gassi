@@ -92,3 +92,26 @@ $secondcolor: lightblue;
   
 }
 
+.team {
+  background-color: $secondcolor;
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+
+  .team-img {
+    border: solid 5px white;
+    border-radius: 50%;
+  }
+
+  .team-link {
+    color: black;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding-top: 0.1rem;
+    margin: 1px 2px 0px 2px;
+  }
+}
