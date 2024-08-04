@@ -12120,4 +12120,41 @@ textarea.form-control-lg {
   border-radius: 50%;
   padding-top: 0.1rem;
   margin: 1px 2px 0px 2px;
+}
+
+.contact {
+  color: white;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background: url("images/contact/erde.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact .contact-message {
+  height: 6rem;
+}
+@media (min-width: 768px) {
+  .contact .contact-message {
+    height: 100%;
+  }
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  color: #0d6efd;
+}
+.contact input::placeholder, .contact textarea::placeholder {
+  color: #0d6efd;
+}
+
+.footer .footer-icon {
+  display: block;
+  text-decoration: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 50%;
+  margin: 1px 2px 0px 2px;
+  padding-top: 0.4rem;
+  border: 1px solid #0d6efd;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
