@@ -12016,6 +12016,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
+#page {
+  position: relative;
+  left: 0px;
+  overflow-x: visible;
+  transition: 1s all;
+  transform: translate(0px, 0px);
+}
+#page.mobile-nav-opened {
+  transform: translate(-180px, 0px);
+}
+#page .mobile-nav {
+  position: absolute;
+  right: -180px;
+  top: 0px;
+  bottom: 0px;
+  width: 180px;
+  background-color: lightblue;
+}
+#page .mobile-nav-link {
+  color: #0d6efd;
+  border-radius: 0px;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  background-color: lightblue;
+}
+
 .page-header {
   background: url("images/header/hunderennen.jpg");
   background-size: cover;

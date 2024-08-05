@@ -3,8 +3,42 @@ $header-jumbotron-height: 250px;
 $section-padding: 120px;
 $shadow: 1px 1px 5px black, 1px 1px 10px darkblue; 
 $secondcolor: lightblue;
+$page-menu-size: 180px;
 
 @import "lib/bootstrap-5.3.3/scss/bootstrap";
+
+body {
+  overflow-x: hidden;
+}
+
+#page {
+  position: relative;
+  left: 0px;
+  overflow-x: visible;
+  transition: 1s all;
+  transform: translate(0px, 0px);
+
+  &.mobile-nav-opened {
+    transform: translate(-$page-menu-size, 0px);
+  }
+
+  .mobile-nav {
+    position: absolute;
+    right: -$page-menu-size;
+    top: 0px;
+    bottom: 0px;
+    width: $page-menu-size;
+    background-color: $secondcolor;
+  }
+
+  .mobile-nav-link {
+    color: $primary;
+    border-radius: 0px;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    background-color: $secondcolor;
+  }
+}
 
 .page-header {
   background: url("images/header/hunderennen.jpg");
