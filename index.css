@@ -12016,26 +12016,25 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
+html, body {
   overflow-x: hidden;
 }
 
 #page {
   position: relative;
   left: 0px;
-  overflow-x: visible;
   transition: 1s all;
   transform: translate(0px, 0px);
 }
 #page.mobile-nav-opened {
-  transform: translate(-180px, 0px);
+  transform: translate(-172px, 0px);
 }
 #page .mobile-nav {
-  position: absolute;
-  right: -180px;
+  position: fixed;
+  right: -172px;
   top: 0px;
   bottom: 0px;
-  width: 180px;
+  width: 172px;
   background-color: lightblue;
 }
 #page .mobile-nav-link {

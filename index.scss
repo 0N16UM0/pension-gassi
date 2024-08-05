@@ -3,18 +3,17 @@ $header-jumbotron-height: 250px;
 $section-padding: 120px;
 $shadow: 1px 1px 5px black, 1px 1px 10px darkblue; 
 $secondcolor: lightblue;
-$page-menu-size: 180px;
+$page-menu-size: 172px;
 
 @import "lib/bootstrap-5.3.3/scss/bootstrap";
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
 #page {
   position: relative;
   left: 0px;
-  overflow-x: visible;
   transition: 1s all;
   transform: translate(0px, 0px);
 
@@ -23,7 +22,7 @@ body {
   }
 
   .mobile-nav {
-    position: absolute;
+    position: fixed;
     right: -$page-menu-size;
     top: 0px;
     bottom: 0px;
