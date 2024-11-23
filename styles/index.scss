@@ -5,7 +5,7 @@ $shadow: 1px 1px 5px black, 1px 1px 10px darkblue;
 $secondcolor: lightblue;
 $page-menu-size: 172px;
 
-@import "lib/bootstrap-5.3.3/scss/bootstrap";
+@import "../lib/bootstrap-5.3.3/scss/bootstrap";
 
 html, body {
   overflow-x: hidden;
