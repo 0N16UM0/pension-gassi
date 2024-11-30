@@ -1,11 +1,22 @@
+<?php 
+  $navigation = array(
+    "#" => "Home",
+    "#services" => "Dienstleistungen",
+    "#angebote" => "Angebote",
+    "#aboutus" => "Über uns",
+    "#team" => "Team",
+    "#contact" => "Kontakt",
+  );
+?>
 <nav class="mobile-nav list-group">
-      <a class="mobile-nav-link list-group-item list-group-item-action" href="#">Home <span
-          class="visually-hidden">(current)</span></a>
-      <a class="mobile-nav-link list-group-item list-group-item-action" href="#services">Dienstleistungen</a>
-      <a class="mobile-nav-link list-group-item list-group-item-action" href="#angebote">Angebote</a>
-      <a class="mobile-nav-link list-group-item list-group-item-action" href="#aboutus">Über&nbsp;uns</a>
-      <a class="mobile-nav-link list-group-item list-group-item-action" href="#team">Team</a>
-      <a class="mobile-nav-link list-group-item list-group-item-action" href="#contact">Kontakt</a>
+  <?php foreach($navigation AS $key => $value):  ?>
+      <a class="mobile-nav-link list-group-item list-group-item-action" href="<?php echo e($key); ?>">
+        <?php echo str_replace(" ", "&nbsp;", e($value)); ?>
+        <?php if ($key == "#"): ?>
+          <span class="sr-only">(current)</span>
+        <?php endif; ?>
+      </a>
+  <?php endforeach ?>
     </nav>
     <header class="page-header">
       <div class="container">
@@ -17,12 +28,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="visually-hidden">(current)</span></a>
-                <a class="nav-item nav-link" href="#services">Dienstleistungen</a>
-                <a class="nav-item nav-link" href="#angebote">Angebote</a>
-                <a class="nav-item nav-link" href="#aboutus">Über&nbsp;uns</a>
-                <a class="nav-item nav-link" href="#team">Team</a>
-                <a class="nav-item nav-link" href="#contact">Kontakt</a>
+              <?php foreach($navigation AS $key => $value):  ?>
+                <a class="nav-item nav-link<?php if($key == "#"): ?> active <?php endif ?>" href="<?php echo e($key); ?>">
+                  <?php echo str_replace(" ", "&nbsp;", e($value)); ?>
+                  <?php if ($key == "#"): ?>
+                    <span class="sr-only">(current)</span>
+                  <?php endif; ?>
+              </a>
+              <?php endforeach ?>
               </div>
             </div>
           </div>

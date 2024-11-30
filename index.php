@@ -1,11 +1,11 @@
+<?php require("inc/functions.inc.php") ?>
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="images/logo/logo.png">
-  <link rel="stylesheet" type="text/css" href="parts/styles/index.css" />
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
   <title>Gassi</title>
 </head>
 <body>
@@ -27,5 +27,4 @@
   <script src="https://kit.fontawesome.com/db48d73a1e.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="index.js"></script>
 </body>
-
 </html>
