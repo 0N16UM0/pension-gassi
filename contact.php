@@ -2,10 +2,10 @@
 require("inc/db.inc.php");
 require("inc/functions.inc.php");
 
-$isFormSubmitted = !empty(strlen($_POST['projectname'])) &&
+$isFormSubmitted = (!empty(strlen($_POST['projectname'])) &&
                     !empty(strlen($_POST['projectemail'])) &&
                     !empty(strlen($_POST['projectsubject'])) &&
-                    !empty(strlen($_POST['projectmessage']));
+                    !empty(strlen($_POST['projectmessage'])));
 
 if ($isFormSubmitted) {
     $stmt = $pdo->prepare("INSERT INTO `messages` (`name`, `email`, `subject`, `message`, `timestamp`) VALUE(:projectname, :projectemail, :projectsubject, :projectmessage, :projecttimestamp)");
